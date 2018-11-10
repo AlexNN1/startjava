@@ -1,34 +1,29 @@
 public class Cycle {
     public static void main(String[] args) {
 
-        for(int i = 0; i <= 20; i++){
+        for(int i = 0; i <= 20; i++) {
             System.out.println("Число " + i);
         }
 
-        System.out.println("\n");
+        System.out.println("------------------");
 
-        int i = 1;
-        int result = 8;
-        while(i < 8){
-            result = result - 2;
-            System.out.println("Число " + result);
-            i++;
+        int i = 6;
+        while(i > -7) {
+            System.out.println("Число " + i);
+            i -= 2;
         }
 
-        System.out.println("\n");
-
-        int p = 1;
-        int odd = 9;
+        System.out.println("------------------");
+        
+        int p = 10;
         int sum = 0;
         do{
-            odd = odd + 1;
-            if(odd % 2 == 0){
-                System.out.println("Число " + odd + " является четным");
-                sum = sum + odd;
+            if(p % 2 == 1) {
+                System.out.println("Число " + p + " является нечетным");
+                sum = sum + p;
             }
             p++;
-        }while(p < 12);
-        
-        System.out.println("Сумма чисел 10 + 12 + 14 + 16 + 18 + 20 = " + sum);
+        }while(p < 21);
+        System.out.println("Сумма чисел 11 + 13 + 15 + 17 + 19 = " + sum);
     }
 }
