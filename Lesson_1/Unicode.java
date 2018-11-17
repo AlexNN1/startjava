@@ -1,14 +1,12 @@
 public class Unicode {
     public static void main (String[] args) {
 
-        char[] ca = {'\u9398'};
+        char code = '\u9398';
         for (int i = 0; i < 24; i++) {
+            System.out.println(code + " ");
             for (int j = 0; j < 32; j++) {
-                String sc = new String(ca);
-                System.out.print(sc + " ");
-                ca[0]++;
+                System.out.print(code + " ");
+                code++;
             }
-            System.out.println();
-        }
     }
 }
