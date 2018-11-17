@@ -3,45 +3,41 @@ class Calc {
 
         int num1 = 3;
         int num2 = 3;
-        char percent = '%';
-        char exponentiation = '^';
-        char sum = '+';
-        char minus = '-';
-        char multiplication = '*';
-        char division = '/';
         int resultExponentiation = 1;
 
-        char operation = division;
+        char operation = '/';
 
-        if(operation == sum) {
+        if(operation == '+') {
             System.out.println("Result operation = " + (num1 + num2));
         }
 
-        if(operation == percent) {
+        if(operation == '%') {
             double numDo1 = (double) num1;
             double numDo2 = (double) num2;
-            System.out.println("Result operation = " + ((numDo1 * numDo2)/100));
+            System.out.println("Result operation = " + (numDo1 % numDo2));
         }
 
-        if(operation == exponentiation) {
+        if(operation == '^') {
             for (int i = 1; i <= num2; i++) {
-                resultExponentiation = resultExponentiation * num1;
+                resultExponentiation *= num1;
             }
-        }        
-        if(operation == exponentiation) {
+        }
+        if(operation == '^') {
             System.out.println("Result operation = " + resultExponentiation);
         }
 
-        if(operation == minus) {
+        if(operation == '-') {
             System.out.println("Result operation = " + (num1 - num2));
         }
 
-        if(operation == multiplication) {
+        if(operation == '*') {
             System.out.println("Result operation = " + (num1 * num2));
         }
 
-        if(operation == division) {
-            System.out.println("Result operation = " + (num1 / num2));
+        if(operation == '/') {
+            double numDo1 = (double) num1;
+            double numDo2 = (double) num2;
+            System.out.println("Result operation = " + (numDo1 / numDo2));
         }
     }
 }
