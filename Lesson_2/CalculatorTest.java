@@ -15,7 +15,7 @@ public class CalculatorTest {
         System.out.print("Enter of mathematical operation: ");
         char operation = scan.next().charAt(0);
 
-        int result1 = calculatorOne.calculate(num1, num2, operation);
+        double result1 = calculatorOne.calculate(num1, num2, operation);
         System.out.println(result1);
     }
 }
