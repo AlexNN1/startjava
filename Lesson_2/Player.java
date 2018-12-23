@@ -1,36 +1,27 @@
 public class Player {
 
-    void numPlayer(int n) {
+    private String name;
+    private int number;
 
-        int num1 = (int) (Math.random() * 101);
-        int num2 = (int) (Math.random() * 101);
+    public String getName() {
+        return name;
+    }
 
-        while (true) {
-            if (num1 > n) {
-                System.out.println("Number Player1 high number PC");
-                System.out.println("Player1 = " + num1);
-                num1--;
-            } if (num2 > n) {
-                System.out.println("Number Player2 high number PC");
-                System.out.println("Player2 = " + num2);
-                num2--;
-            } if (num1 < n) {
-                System.out.println("Number Player1 down number PC");
-                System.out.println("Player1 = " + num1);
-                num1++;
-            } if (num2 < n) {
-                System.out.println("Number Player2 down number PC");
-                System.out.println("Player2 = " + num2);
-                num2++;
-            } if (num1 == n) {
-                System.out.println("Player1 won");
-                System.out.println("Player1 = " + num1);
-                break;
-            } if (num2 == n) {
-                System.out.println("Player2 won");
-                System.out.println("Player2 = " + num2);
-                break;
-            }
-        }
+    public void  setName(String name) {
+        this.name = name;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public  void setNumber(int number) {
+        this.number = number;
+        System.out.println(name);
+    }
+
+    public Player(String name) {
+        setName(name);
+        number = -1;
     }
 }
