@@ -13,5 +13,16 @@ public class GuessNumberTest {
         GuessNumber guessNumber = new GuessNumber(p1, p2);
 
         guessNumber.play();
+
+        while (true) {
+            System.out.println("Do you want to continue? [y/n]");
+            char answer = scan.next().charAt(0);
+            if (answer == 'y') {
+                guessNumber.play();
+            }
+            if (answer == 'n') {
+                break;
+            }
+        }
     }
 }

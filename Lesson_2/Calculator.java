@@ -21,15 +21,17 @@ public class Calculator {
                     for (int i = 1; i <= num2; i++) {
                         result *= num1;
                     }
+                } else {
+                    System.out.println("Do not enter negative numbers!");
                 }
                 break;
             case '%':
                 double num1Percent = (double) num1;
                 double num2Percent = (double) num2;
-                result = num1Percent * num2Percent / 100;
+                result = (num1Percent / 100) * num2Percent;
                 break;
             default:
-                System.out.println("The opertion symbol is not correctly entered, repeat input");
+                System.out.println("The operation symbol is not correctly entered");
         }
         return result;
     }
