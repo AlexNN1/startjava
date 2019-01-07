@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class GuessNumber {
 
-    Scanner scan = new Scanner(System.in);
-    Player p1;
-    Player p2;
-    int numberPC;
+    private Scanner scan = new Scanner(System.in);
+    private Player p1;
+    private Player p2;
 
     public GuessNumber(Player p1, Player p2) {
         this.p1 = p1;
@@ -15,6 +14,7 @@ public class GuessNumber {
     public void play() {
        while (true) {
            boolean isWin = false;
+           int numberPC;
            numberPC = (int) (Math.random() * 101);
            System.out.println("PC = " + numberPC);
            System.out.println("Player " + p1.getName() + " enter number ");
@@ -43,13 +43,12 @@ public class GuessNumber {
            if (isWin) {
                if (p1.getNumber() == numberPC) {
                    System.out.println("Player " + p1.getName() + " won");
+                   break;
                }
                if (p2.getNumber() == numberPC) {
                    System.out.println("Player " + p2.getName() + " won");
+                   break;
                }
-           }
-           if (isWin) {
-               break;
            }
        }
     }

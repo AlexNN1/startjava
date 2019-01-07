@@ -6,6 +6,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         Scanner scan = new Scanner(System.in);
         char answer;
+        boolean exit = false;
 
         do {
             System.out.print("Enter the first number: ");
@@ -17,10 +18,8 @@ public class CalculatorTest {
             System.out.print("Enter the second number: ");
             int num2 = scan.nextInt();
 
-            double result = calculator.calculate(num1, num2, operation);
+            int result = calculator.calculate(num1, num2, operation);
             System.out.println(result);
-
-            boolean exit = false;
 
             while (true) {
                 System.out.println("Want to continue? [y/n]");
@@ -33,9 +32,6 @@ public class CalculatorTest {
                     break;
                 }
             }
-            if(exit) {
-                break;
-            }
-        } while (true);
+        } while (!exit);
     }
 }
