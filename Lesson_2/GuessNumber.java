@@ -12,10 +12,9 @@ public class GuessNumber {
     }
 
     public void play() {
+        int numberPC;
+        numberPC = (int) (Math.random() * 101);
        while (true) {
-           boolean isWin = false;
-           int numberPC;
-           numberPC = (int) (Math.random() * 101);
            System.out.println("PC = " + numberPC);
            System.out.println("Player " + p1.getName() + " enter number ");
            p1.setNumber(scan.nextInt());
@@ -35,16 +34,9 @@ public class GuessNumber {
                System.out.println("Number player " + p2.getName() + " < number PC");
            }
            if (p1.getNumber() == numberPC) {
-               isWin = true;
+               System.out.println("Player " + p1.getName() + " won");
+               break;
            } else {
-               if (p2.getNumber() == numberPC)
-                   isWin = true;
-           }
-           if (isWin) {
-               if (p1.getNumber() == numberPC) {
-                   System.out.println("Player " + p1.getName() + " won");
-                   break;
-               }
                if (p2.getNumber() == numberPC) {
                    System.out.println("Player " + p2.getName() + " won");
                    break;

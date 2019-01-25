@@ -17,17 +17,9 @@ public class Calculator {
                 result = num1 / num2;
                 break;
             case '^':
-                if (num2 >= 0) {
-                    if(num2 != 0) {
-                        for (int i = 1; i <= num2; i++) {
-                            result = 1;
-                            result *= num1;
-                        }
-                    } else {
-                        result = 1;
-                    }
-                } else {
-                    System.out.println("Do not enter negative numbers!");
+                result = 1;
+                for (int i = 1; i <= num2; i++) {
+                    result *= num1;
                 }
                 break;
             case '%':
