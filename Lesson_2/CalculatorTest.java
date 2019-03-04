@@ -1,12 +1,11 @@
 import java.util.Scanner;
 
 public class CalculatorTest {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         Calculator calculator = new Calculator();
         Scanner scan = new Scanner(System.in);
         char answer;
-        boolean exit = false;
 
         do {
             System.out.print("Enter the first number: ");
@@ -28,10 +27,12 @@ public class CalculatorTest {
                     break;
                 }
                 if (answer == 'n') {
-                    exit = true;
                     break;
                 }
             }
-        } while (!exit);
+            if (answer == 'n') {
+                break;
+            }
+        } while (true);
     }
 }

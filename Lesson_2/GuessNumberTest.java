@@ -1,31 +1,34 @@
 import java.util.Scanner;
+
 public class GuessNumberTest {
 
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
-        boolean exit = false;
+        char answer;
         do {
             System.out.println("First player enter name ");
-            Player p1 = new Player(scan.nextLine());
+            Player player1 = new Player(scan.nextLine());
             System.out.println("Second player enter name ");
-            Player p2 = new Player(scan.nextLine());
 
-            GuessNumber guessNumber = new GuessNumber(p1, p2);
+            Player player2 = new Player(scan.nextLine());
+
+            GuessNumber guessNumber = new GuessNumber(player1, player2);
 
             guessNumber.play();
 
             while (true) {
                 System.out.println("Do you want to continue? [y/n]");
-                char answer = scan.next().charAt(0);
+                answer = scan.next().charAt(0);
                 if (answer == 'y') {
                     break;
                 }
                 if (answer == 'n') {
-                    exit = true;
                     break;
                 }
             }
-        } while (!exit);
+            if (answer == 'n') {
+                break;
+            }
+        } while (true);
     }
 }
