@@ -3,13 +3,15 @@ public class Player {
     private String name;
     private int number;
 
-    public Player(String name) {
-        this.name = name;
+    public Player() {
         number = -1;
     }
 
     public String getName() {
         return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getNumber() {

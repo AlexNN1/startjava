@@ -1,0 +1,6 @@
+# Comment
+# dir/ - ignore full dir
+# dir/*.txt - choice ignore file
+
+# ignore add dir out
+out/
