@@ -5,8 +5,10 @@ public class GuessNumberTest {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        Player player1 = new Player();
-        Player player2 = new Player();
+        System.out.println("First player enter name ");
+        Player player1 = new Player(scan.nextLine());
+        System.out.println("Second player enter name ");
+        Player player2 = new Player(scan.nextLine());
 
         GuessNumber guessNumber = new GuessNumber(player1, player2);
 
@@ -19,9 +21,6 @@ public class GuessNumberTest {
                 answer = scan.nextLine();
             } while (!answer.equalsIgnoreCase("yes") && !answer.equalsIgnoreCase("no"));
 
-            if (answer.equalsIgnoreCase("no")) {
-                break;
-            }
-        } while (true);
+        } while (answer.equals("yes"));
     }
 }

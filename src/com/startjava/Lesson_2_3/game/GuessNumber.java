@@ -17,8 +17,6 @@ public class GuessNumber {
         while (true) {
             System.out.println("PC = " + numberPC);
 
-            System.out.println("First player enter name ");
-            player1.setName(scan.nextLine());
             System.out.println("Player " + player1.getName() + " enter number ");
             player1.setNumber(scan.nextInt());
             if (player1.getNumber() > numberPC) {
@@ -32,9 +30,6 @@ public class GuessNumber {
                 break;
             }
 
-//            scan.next();
-            System.out.println("Second player enter name ");
-            player2.setName(scan.nextLine());
             System.out.println("Player " + player2.getName() + " enter number ");
             player2.setNumber(scan.nextInt());
             if (player2.getNumber() > numberPC) {
