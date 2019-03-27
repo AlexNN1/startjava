@@ -1,6 +1,3 @@
-package com.startjava.Lesson_2_3.game;
-// import com.startjava.Lesson_2_3.GuessNumber;
-//import com.startjava.Lesson_2_3.game.Player;
 import java.util.Scanner;
 
 public class GuessNumberTest {
@@ -10,7 +7,6 @@ public class GuessNumberTest {
 
         System.out.println("First player enter name ");
         Player player1 = new Player(scan.nextLine());
-        
         System.out.println("Second player enter name ");
         Player player2 = new Player(scan.nextLine());
 

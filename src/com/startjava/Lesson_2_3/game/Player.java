@@ -1,6 +1,3 @@
-package com.startjava.Lesson_2_3.game;
-// import com.startjava.Lesson_2_3.GuessNumber;
-// import com.startjava.Lesson_2_3.GuessNumberTest;
 public class Player {
 
     private String name;
