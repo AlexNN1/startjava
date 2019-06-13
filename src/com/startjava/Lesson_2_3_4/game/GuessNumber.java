@@ -1,13 +1,13 @@
-package com.startjava.Lesson_2_3.game;
+package com.startjava.Lesson_2_3_4.game;
 import java.util.Scanner;
 
-public class GuessNumber {
+class GuessNumber {
     private Scanner scan = new Scanner(System.in);
     private Player player1;
     private Player player2;
     private int numberPC;
 
-    public GuessNumber(Player player1, Player player2) {
+    GuessNumber(Player player1, Player player2) {
         this.player1 = player1;
         this.player2 = player2;
     }
@@ -19,7 +19,7 @@ public class GuessNumber {
             System.out.println("Number player " + name + " < number PC");
         }
     }
-    public void play() {
+    void play() {
         numberPC = (int) (Math.random() * 101);
         
         while (true) {

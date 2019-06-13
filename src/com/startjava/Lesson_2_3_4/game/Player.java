@@ -1,23 +1,23 @@
-package com.startjava.Lesson_2_3.game;
-public class Player {
+package com.startjava.Lesson_2_3_4.game;
+class Player {
 
     private String name;
     private int number;
 
-    public Player(String name) {
+    Player(String name) {
         this.name = name;
         number = -1;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public int getNumber() {
+    int getNumber() {
         return number;
     }
 
-    public  void setNumber(int number) {
+    void setNumber(int number) {
         this.number = number;
     }
 }

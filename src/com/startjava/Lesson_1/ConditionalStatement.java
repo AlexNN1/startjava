@@ -1,9 +1,11 @@
-public class ConditionalStatement {	
+package com.startjava.Lesson_1;
+
+public class ConditionalStatement {
     public static void main(String[] args) {
     
-    	float myGrowth = (float) 1.74; //growth‚
-    	int myAge = 45; //age‚
-    	char myGender = 'M'; //gender»
+    	float myGrowth = (float) 1.74; //growth
+    	int myAge = 45; //ageпїЅ
+    	char myGender = 'M'; //gender
     	char myName = 'A'; //name
     	//boolean isTrue = 
 
@@ -25,12 +27,12 @@ public class ConditionalStatement {
     		System.out.println("To my growth " + myGrowth + " more 1,80");
     	}
 
-    	if(myName == 'М'){
-    		System.out.println("Мое имя начинается на букву М");
-    	} else if(myName == 'И'){
-    		System.out.println("Мое имя начинается на букву И");
+    	if(myName == 'пїЅ'){
+    		System.out.println("пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ");
+    	} else if(myName == 'пїЅ'){
+    		System.out.println("пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ");
     	} else{
-    		System.out.println("Мое имя начинается на букву " + myName);
+    		System.out.println("пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ " + myName);
     	}
     }    
 }
